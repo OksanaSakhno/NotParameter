@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuiteForPN" preserve-order="true">
+	<listeners>
+		<listener class-name="pn.reporting.TakeScreenShot" />
+	</listeners>
+	<test name="Test1" enabled="false">
+		<classes>
+			<class name="pn.tests.SortedProductsTest">
+			<methods>
+				<include name="filterByPriceTest" />
+				<include name="filterByNameTest" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Test2" enabled="false">
+		<classes>
+			<class name="pn.tests.CompareProducts"></class>
+		</classes>
+	</test>
+	<test name="Test3" enabled="false">
+		<classes>
+			<class name="pn.tests.CheckMinMaxTest"></class>
+		</classes>
+	</test>
+	<test name="Test4" enabled="false">
+		<classes>
+			<class name="pn.tests.CheckVendorsOfGoods"></class>
+		</classes>
+	</test>
+
+	<test name="Test5" enabled="false">
+		<classes>
+			<class name="pn.tests.FuncAndDecriptTest"></class>
+
+		</classes>
+	</test>
+	<test name="Test6" enabled="false">
+	<classes>
+		<class name="pn.tests.CheckInfoAndLinkTest">
+			<methods>
+				<include name="checkLinkOfProduct" />
+				<include name="checkDescription" />
+			</methods>
+		</class>
+	</classes>
+</test>
+	<test name="TestSuite" enabled="true" preserve-order="true">
+		<classes>
+			<class name="pn.tests.SortedProductsTest"></class>
+			<class name="pn.tests.CompareProducts"></class>
+			<class name="pn.tests.CheckMinMaxTest"></class>
+			<class name="pn.tests.CheckVendorsOfGoods"></class>
+			<class name="pn.tests.FuncAndDecriptTest"></class>
+			<class name="pn.tests.CheckInfoAndLinkTest"></class>
+		</classes>
+	</test>
+
+</suite>
